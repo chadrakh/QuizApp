@@ -18,15 +18,12 @@ public class LoginController {
     private TextField txtInputPassword;
 
     @FXML
-    private Button btnLogin;
-
-    @FXML
     protected void onLoginButtonClick() throws IOException {
         String username = "admin";
         String password = "pa55word";
 
         String inputUsername = txtInputUsername.getText().toLowerCase();
-        String inputPassword = txtInputPassword.getText().toLowerCase();
+        String inputPassword = txtInputPassword.getText();
 
         Alert loginSuccessAlert = new Alert(Alert.AlertType.CONFIRMATION, "Welcome! You have successfully logged in.", ButtonType.OK);
 
@@ -52,6 +49,9 @@ public class LoginController {
     protected void onExitButtonClick() {
         Platform.exit();
     }
+
+    @FXML
+    private Button btnLogin;
 
     public void switchToQuizScene() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(FXQuizApplication.class.getResource("quiz-view.fxml"));
