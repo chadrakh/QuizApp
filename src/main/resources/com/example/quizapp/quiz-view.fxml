@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.quizapp.QuizController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label id="lblQuestion1" text="Q1: What is the last colour of the rainbow?" />
+    <TextField fx:id="txtQuestion1" promptText="Type here..." />
+
+    <Label id="lblQuestion2" text="Q2: What is the second colour of the rainbow?" />
+    <TextField fx:id="txtQuestion2" promptText="Type here..." />
+
+    <Label id="lblQuestion3" text="Q3: What is the fifth colour of the rainbow?" />
+    <TextField fx:id="txtQuestion3" promptText="Type here..." />
+
+    <Label id="lblQuestion4" text="Q4: What is the first colour of the rainbow?" />
+    <TextField fx:id="txtQuestion4" promptText="Type here..." />
+
+    <Label id="lblQuestion5" text="Q5: What is the second to last colour of the rainbow?" />
+    <TextField fx:id="txtQuestion5" promptText="Type here..." />
+
+    <Button id="btnSubmit" onAction="#onSubmitButtonClick" text="Submit" />
+    <Button id="btnReset" onAction="#onResetButtonClick" text="Reset" />
+</VBox>
