@@ -15,7 +15,13 @@ public class LoginController {
     private TextField txtInputUsername;
 
     @FXML
-    private TextField txtInputPassword;
+    private PasswordField txtInputPassword;
+
+    public void activateLoginButton() {
+        if (!txtInputUsername.getText().isEmpty() && !txtInputUsername.getText().isEmpty()) {
+            btnLogin.setDisable(false);
+        }
+    }
 
     @FXML
     protected void onLoginButtonClick() throws IOException {

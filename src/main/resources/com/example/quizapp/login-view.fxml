@@ -11,9 +11,9 @@
 
     <Label id="lblSignIn" text="SIGN IN" />
 
-    <TextField fx:id="txtInputUsername" promptText="Username" />
-    <TextField fx:id="txtInputPassword" promptText="Password" />
+    <TextField fx:id="txtInputUsername" promptText="Username" onKeyTyped="#activateLoginButton" />
+    <PasswordField fx:id="txtInputPassword" promptText="Password" onKeyTyped="#activateLoginButton" />
 
-    <Button fx:id="btnLogin" onAction="#onLoginButtonClick" text="Login" />
+    <Button fx:id="btnLogin" onAction="#onLoginButtonClick" text="Login" disable="true" />
     <Button id="btnExit" onAction="#onExitButtonClick" text="Exit" />
 </VBox>
